@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="Photos/DC.png" type="image/x-icon">
+</head>
+<body>
+    <form>
+        <center>
+            <header>Tic-Tac-Toe</header>
+        </center>
+        <br>
+        <div class="table">
+            <center>
+                <input type="text" size="1" name="a0" onfocus="complain(this)">
+                <input type="button" name="b0" onclick="clickit(this)"> 
+                <input type="text" size="1" name="a1" onfocus="complain(this)"> 
+                <input type="button" name="b1" onclick="clickit(this)"> 
+                <input type="text" size="1" name="a2" onfocus="complain(this)"> 
+                <input type="button" name="b2" onclick="clickit(this)"> 
+                <br>
+                <input type="text" size="1" name="a3" onfocus="complain(this)"> 
+                <input type="button" name="b3" onclick="clickit(this)"> 
+                <input type="text" size="1" name="a4" onfocus="complain(this)"> 
+                <input type="button" name="b4" onclick="clickit(this)"> 
+                <input type="text" size="1" name="a5" onfocus="complain(this)"> 
+                <input type="button" name="b5" onclick="clickit(this)">
+                <br>
+                <input type="text" size="1" name="a6" onfocus="complain(this)">
+                <input type="button" name="b6" onclick="clickit(this)"> 
+                <input type="text" size="1" name="a7" onfocus="complain(this)"> 
+                <input type="button" name="b7" onclick="clickit(this)"> 
+                <input type="text" size="1" name="a8" onfocus="complain(this)">
+                <input type="button" name="b8" onclick="clickit(this)">
+                <br>
+                <br>
+                <font size="3" class="Msg">Mensagem:</font>
+                <input type="text" size="20" name="output">
+                <br>
+                <br>
+                Nivel de Dificuldade:
+                <select name="difficulty" size="1" onchange="diff=form.difficulty[form.difficulty.selectedIndex].value;">
+                    <option value="1"> Muito Facíl </option>
+                    <option value="2"> Facíl </option>
+                    <option selected value="3"> Médio </option>
+                    <option value="4"> Difícil </option>
+                </select>
+            </center>
+        </div>
+        <br>
+        <div class="config">
+            <center>
+                <font size="3" class="config0"></font>
+                <input type="button" value="Computador Movendo Primeiro" onclick="Pc1">
+            </center>            
+        </div>
+        <br>
+        <div>
+            <center>
+                <input type="reset" value="Reiniciar" onclick="clear_all(this.form)"> 
+            </center>
+        </div>
+    </form>
+    <footer>DBO &copy; IFRS <br> By: <strong>Gabriel Soares</strong> </footer>
+
+   <script src="js/main.js"></script> 
+   <script src="js/main0.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mural de Recado</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="Photos/DC.png" type="image/x-icon">
+</head>
+<body>
+    <header>Mural</header>
+    <div class="table">
+        <form>
+            <label for="title">Titulo:</label>
+            <br>
+            <input type="text" placeholder="Title" id="title" size="20" autofocus>
+            <br>
+            <label for="input">Tarefa:</label>
+            <br>
+            <textarea type="text" placeholder="Tarefa" id="input" 
+            rows="5" cols="15"></textarea>
+            <br>
+            <button id="add">Adicionar</button>
+            <button id="delete">Exluir Selecionados</button>
+        </form>
+        <aside>
+            <table id="first">
+                <tbody id="second"></tbody>
+            </table>
+
+        </aside>
+    </div>
+
+    <footer>DBO &copy; IFRS <br> By: <strong>Gabriel Soares</strong></footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
